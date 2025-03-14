@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.cover-image {
+  position: relative;
+  color: white;
+
+  text-align: center;
+}
+.cover-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.kochi-soluotion {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+
+  position: absolute;
+  top: 200px;
+  right: 200px;
+}
+.kochi-soluotion button {
+  background-color: rgb(250, 142, 65);
+  color: black;
+  padding: 10px 15px;
+  border-color: chocolate;
+}
+
+.card-section {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cards-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cards {
+  background-color: white;
+  padding-bottom: 50px;
+  padding-left: 10;
+
+  border: 1px black solid;
+  border-radius: 9px;
+}
+
+.cards h3 {
+  background-color: rgb(14, 14, 99);
+  color: white;
+  padding: 40px;
+  border: 1px black solid;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  text-align: center;
+}
+
+.cards p {
+  padding: 20px;
+}
+
+.about-us {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.image-info {
+  display: grid;
+
+  grid-template-columns: repeat(2, 4fr);
+  place-items: center;
+  gap: 20px 10px;
+}
+
+.image-info img {
+  grid-column: 1 / 3;
+  grid-row: 1/2;
+
+  width: 500px;
+}
+
+.information {
+  grid-column: 3 / 4;
+  grid-row: 1/2;
+
+  margin-bottom: 10px;
+}
+
+.Mission-Statement {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .kochi-soluotion {
+    font-size: xx-small;
+    padding: 50px;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .image-info {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .image-info img {
+    grid-column: 1 / 4;
+    grid-row: 1;
+  }
+
+  .information {
+    grid-column: 1 / 4;
+    grid-row: 2;
+  }
+}

@@ -1,0 +1,36 @@
+
+header{
+position: relative;
+
+}
+.nav-bar{
+   background-color: rgb(14, 14, 99);
+   display: flex;
+   flex-direction: row;
+   justify-content:space-between ;
+   color: white;
+   width: 100%;
+   position: fixed;
+   padding: 0px 15px;
+   z-index: 1;
+
+  
+}
+ .list{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+ }
+
+ .list-item {
+
+text-decoration: none;
+list-style: none;
+
+ }
+a {
+    color: white;
+    text-decoration: none;
+
+ }
